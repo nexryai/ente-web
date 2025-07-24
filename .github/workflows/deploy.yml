@@ -1,4 +1,4 @@
-name: Deploy blog
+name: Deploy to Cloudflare
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    name: Publish blog contents
+    name: Publish contents
     permissions:
       contents: read
       deployments: write
